@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(night.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container Style */
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  color: #fff;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: aqua;
+}
+
+.header-text p {
+  color: #fff;
+}
+
+/* Responsive Styles for Burger Menu */
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none;
+      width: 25%;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 0%;
+      padding-top: 20px;
+      border-radius: 5%;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  /* Show the burger icon on mobile */
+  .menu-icon {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+  }
+
+  /* When the menu is active, display the links */
+  .nav-links.active {
+      display: flex;
+  }
+}
+
+
+/* ----------About----------- */
+#about{
+    background: radial-gradient(circle at 50% 50%, #5de0e6, #004aad);
+    padding: 60px;
+    color:#fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 10);
+}
+.about-col-2{
+    flex-basis: 50%;
+}
+#About{
+    position: relative;
+    top: 0px;
+    text-align: center;
+
+}
+.sub-title{
+    font-size: 100%;
+    font-weight: 1000px;
+    
+}
+/* About Section */
+#About {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styling */
+  #About + br + p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+
+    .about-col-1 img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+.copyright {
+    align-items: center;
+    display: flex;
+
+}
+
+#copy {
+    margin: 20px;
+
+}
+@media screen and (max-width: 768px) {
+    ul.nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    ul.nav li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    ul.nav li a {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  }
+  
+/* ---------------------Skills--------------------- */
+#skills {
+    padding: 60px 0;
+    background: radial-gradient(circle at 50% 50%, #5de0e6, #004aad);
+    text-align: center;
+  }
+  
+  #skills .sub-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #000000;
+  }
+  
+  /* Carousel container */
+  #skills .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Carousel images */
+  #skills .carousel-item img {
+    width: 150%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Carousel controls */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #007bff;
+  }
+  
+.carousel-caption.bottom-caption h5,
+.carousel-caption.bottom-caption p {
+  color: black;           
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ------------------Contact---------------- */
+#contact {
+  text-align: center;
+  padding: 40px 0;
+  background: radial-gradient(circle at 50% 50%, #5de0e6, #004aad);
+}
+
+#contact h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-links img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-links img:hover {
+  transform: scale(1.1);
+}
+
+  
+#logo img {
+    width: 50px;
+  }
+/* -------------footer------------ */
+footer {
+    background-color: #205781;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+  }
+  footer #logo img {
+    height: 50px;
+    vertical-align: middle;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 10);
+  }
+  
+  footer #copy {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+    

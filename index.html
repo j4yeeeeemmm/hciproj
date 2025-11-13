@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Portfolio</title>
+    <link rel="stylesheet" href="desu.css">
+    <link rel="stylesheet" href="script.js/">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+  </head>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>HCI 101</p>
+            <h1>WHAT IS <span>HCI </span>?</h1>
+        </div>
+    </div>
+</div>
+
+    <!---------------------------About-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="jm.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1  id="About" class="sub-title">About</h1>
+                    <br>
+                    <p>Human-Computer Interaction (HCI) is a multidisciplinary field that focuses on the design and study of how people interact with computers and digital systems. Its primary goal is to create technology that is not only functional but also intuitive, efficient, and satisfying for users. HCI integrates knowledge from computer science, psychology, design, and ergonomics to understand user needs and behaviors.</p>
+                    <br>
+                    
+                </div>
+
+            </div>
+            </div>
+        </div>
+<!-- -------------------Skills--------------------- -->
+<section id="skills">
+  <div class="container">
+    <h1 class="sub-title">TYPES OF HCI</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="cli.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption bottom-caption">
+            <h5><strong>COMMAND LINE INTERFACE(CLI)</strong></h5>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <img src="gui.png" class="d-block w-100" alt="">
+          <div class="carousel-caption bottom-caption">
+            <h5><strong>GRAPHICAL USER INTERFACE(GUI)</strong></h5> 
+        </div>  
+        </div>
+        <div class="carousel-item">
+          <img src="menu.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption bottom-caption">
+            <h5><strong>MENU-BASED INTERFACE</strong></h5> 
+        </div>
+      </div>
+      <div class="carousel-item">
+          <img src="form.png" class="d-block w-100" alt="">
+          <div class="carousel-caption bottom-caption">
+            <h5><strong>FORM BASED INTERFACE</strong></h5> 
+        </div>  
+        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ------------------------Conatct----------------- -->
+  <section>
+<div id="contact">
+  <h1>Contact</h1>
+  
+  <ul>
+  <a id="logo" href="https://www.facebook.com/markjhon.desuniafredeluces"><img src="facebook.png"></a>
+  <a  id="logo" href="https://github.com/j4yeeeeemmm"><img src="github.jpg"></a>
+  <a id="logo" href="https://www.instagram.com/whois.jh0nmarkk/"><img src="instagram.png"></a>
+  </ul>
+</div>
+
+  </section>
+    <footer>
+        <div class="copyright">
+            <a id="logo" href="#header"><img src= "logo.png"></a>
+            <p id="copy">&copy;Copyright. All rights reserved.</p>
+        
+        </div>
+    </footer>
+</section>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
